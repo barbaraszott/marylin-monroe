@@ -1,7 +1,13 @@
 import React from 'react';
 import './App.css';
 
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import { connect } from 'react-redux';
+
+import Header from './Header';
+import User from './User';
+import Gallery from './Gallery';
 
 const mapStateToProps = (state) => {
 	return {};
@@ -10,7 +16,13 @@ const mapStateToProps = (state) => {
 function App() {
 	return (
 		<React.Fragment>
-			<h1>Hello.</h1>
+			<Router>
+				<Header />
+				<main className="main">
+					<Route exact path="/" component={User} />
+					<Route path="/gallery" component={Gallery} />
+				</main>
+			</Router>
 		</React.Fragment>
 	);
 }
