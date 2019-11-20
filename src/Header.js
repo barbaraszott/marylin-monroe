@@ -15,10 +15,10 @@ export class Header extends PureComponent {
 				<nav className="navbar">
 					{/* TODO: read more about exact */}
 					<NavLink exact to="/" className="navbar__link" activeClassName="navbar__link--selected">
-						<i class="fas fa-user fa-lg" />
+						<i className="fas fa-user fa-lg" />
 					</NavLink>
 					<NavLink to="/gallery" className="navbar__link" activeClassName="navbar__link--selected">
-						<i class="far fa-image fa-lg" />
+						<i className="far fa-image fa-lg" />
 					</NavLink>
 				</nav>
 			</React.Fragment>
