@@ -6,10 +6,25 @@
 }
 
 .navbar {
-	height: 50px;
+	height: 55px;
 	margin: 1px 0;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	background-color: #7ad6bb;
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 48px;
+		min-width: 48px;
+		margin: 0 5px;
+		color: white;
+
+		&--selected {
+			border: 2px solid white;
+			border-radius: 50%;
+		}
+	}
 }
