@@ -11,11 +11,12 @@ export class Header extends PureComponent {
 			<React.Fragment>
 				<header className="header" />
 				<nav className="navbar">
+					{/* TODO: read more about exact */}
 					<NavLink exact to="/" className="navbar__link" activeClassName="navbar__link--selected">
-						User
+						<i class="fas fa-user fa-lg" />
 					</NavLink>
 					<NavLink to="/gallery" className="navbar__link" activeClassName="navbar__link--selected">
-						Gallery
+						<i class="far fa-image fa-lg" />
 					</NavLink>
 				</nav>
 				<div className="user-photo" />
