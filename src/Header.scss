@@ -3,6 +3,7 @@
 	background-image: url('./sand-bcg.jpg');
 	background-position: bottom center;
 	background-size: cover;
+	position: relative;
 }
 
 .navbar {
@@ -27,4 +28,17 @@
 			border-radius: 50%;
 		}
 	}
+}
+
+.user-photo {
+	height: 130px;
+	width: 130px;
+	position: absolute;
+	top: 100%;
+	transform: translate(50%, -50%);
+	background-image: url('./user-photo.jpg');
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
