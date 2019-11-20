@@ -9,7 +9,9 @@ export class Header extends PureComponent {
 	render() {
 		return (
 			<React.Fragment>
-				<header className="header" />
+				<header className="header">
+					<div className="user-photo" />
+				</header>
 				<nav className="navbar">
 					{/* TODO: read more about exact */}
 					<NavLink exact to="/" className="navbar__link" activeClassName="navbar__link--selected">
@@ -19,7 +21,6 @@ export class Header extends PureComponent {
 						<i class="far fa-image fa-lg" />
 					</NavLink>
 				</nav>
-				<div className="user-photo" />
 			</React.Fragment>
 		);
 	}
