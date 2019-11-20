@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import './Header.scss';
 
@@ -11,8 +11,12 @@ export class Header extends PureComponent {
 			<React.Fragment>
 				<header className="header" />
 				<nav className="navbar">
-					<Link to="/">User</Link>
-					<Link to="/gallery">Gallery</Link>
+					<NavLink exact to="/" className="navbar__link" activeClassName="navbar__link--selected">
+						User
+					</NavLink>
+					<NavLink to="/gallery" className="navbar__link" activeClassName="navbar__link--selected">
+						Gallery
+					</NavLink>
 				</nav>
 				<div className="user-photo" />
 			</React.Fragment>
