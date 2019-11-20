@@ -10,6 +10,10 @@ export class Header extends PureComponent {
 		return (
 			<React.Fragment>
 				<header className="header" />
+				<nav className="navbar">
+					<Link to="/">User</Link>
+					<Link to="/gallery">Gallery</Link>
+				</nav>
 				<div className="user-photo" />
 			</React.Fragment>
 		);
