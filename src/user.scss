@@ -1,0 +1,28 @@
+@import './colors.scss';
+
+.localization {
+	position: relative;
+	color: $lightGrey;
+
+}
+
+.description {
+	color: $darkGrey;
+	line-height: 1.5;
+	text-align: justify;
+
+	&__quote {
+		margin: 40px;
+		color: $lightGrey;
+		font-style: italic;
+		border-left: 5px solid $mainColor;
+		padding-left: 20px;
+	}
+}
+
+@media (max-width: 500px) {
+	.description__quote {
+		margin: 20px;
+		padding-left: 10px;
+	}
+}
