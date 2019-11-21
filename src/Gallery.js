@@ -10,7 +10,6 @@ const mapStateToProps = (state) => ({ photos: state.photos });
 
 export class Gallery extends PureComponent {
 	componentDidMount() {
-		if (this.props.photos.length !== 0) return;
 
 		const TAGS = [
 			'marilyn',
@@ -50,7 +49,11 @@ export class Gallery extends PureComponent {
 					return (
 						<figure key={uniqueID()} className="photo-container">
 							<a href={photo.link} rel="noopener noreferrer" target="_blank" className="photo-wrapper">
-								<img src={photo.imageSrc} alt={`${photo.title} - by ${photo.author}`} tabIndex="0" className="photo" />
+								<img
+									src={photo.imageSrc}
+									alt={`${photo.title} by ${photo.author}. Click to open on Flickr`}
+									className="photo"
+								/>
 							</a>
 						</figure>
 					);
