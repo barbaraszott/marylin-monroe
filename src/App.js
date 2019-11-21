@@ -15,7 +15,7 @@ const mapStateToProps = (state) => {
 
 function App() {
 	return (
-		<React.Fragment>
+		<div className="app">
 			<Router>
 				<Header />
 				<main className="main">
@@ -23,7 +23,7 @@ function App() {
 					<Route path="/gallery" component={Gallery} />
 				</main>
 			</Router>
-		</React.Fragment>
+		</div>
 	);
 }
 

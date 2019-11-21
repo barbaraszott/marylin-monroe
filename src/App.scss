@@ -1,1 +1,20 @@
+@import './colors.scss';
 
+.app {
+	margin: 0 auto;
+	width: 80vw;
+	max-width: 900px;
+	min-width: 300px;
+	min-height: 100vh;
+	box-shadow: 0px 0px 10px 0px $mainColor;
+}
+
+.main {
+	padding: 20px;
+}
+
+@media (max-width: 400px) {
+	.main {
+		padding: 0;
+	}
+}

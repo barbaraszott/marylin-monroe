@@ -1,17 +1,14 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import uniqueID from 'uniqid';
 import jsonp from 'jsonp';
 import PropTypes from 'prop-types';
-
 import './gallery.scss';
 
 const mapStateToProps = (state) => ({ photos: state.photos });
 
-export class Gallery extends PureComponent {
+export class Gallery extends Component {
 	componentDidMount() {
-		if (this.props.photos.length !== 0) return;
-
 		const TAGS = [
 			'marilyn',
 			'monroe'
@@ -50,7 +47,11 @@ export class Gallery extends PureComponent {
 					return (
 						<figure key={uniqueID()} className="photo-container">
 							<a href={photo.link} rel="noopener noreferrer" target="_blank" className="photo-wrapper">
-								<img src={photo.imageSrc} alt={`${photo.title} - by ${photo.author}`} tabIndex="0" className="photo" />
+								<img
+									src={photo.imageSrc}
+									alt={`${photo.title} by ${photo.author}. Click to open on Flickr`}
+									className="photo"
+								/>
 							</a>
 						</figure>
 					);
