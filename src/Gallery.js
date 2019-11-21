@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import uniqueID from 'uniqid';
 import jsonp from 'jsonp';
 import PropTypes from 'prop-types';
 
@@ -39,7 +40,19 @@ export class Gallery extends Component {
 	}
 
 	render() {
-		return <h1>Gallery, wohooo!</h1>;
+		return (
+			<section className="gallery">
+				{this.props.photos.map((photo) => {
+					return (
+						<figure key={uniqueID()} className="photo-container">
+							<a href={photo.link} rel="noopener noreferrer" target="_blank" className="photo-wrapper">
+								<img src={photo.imageSrc} alt={`${photo.title} - by ${photo.author}`} tabIndex="0" className="photo" />
+							</a>
+						</figure>
+					);
+				})}
+			</section>
+		);
 	}
 }
 
