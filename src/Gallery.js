@@ -3,14 +3,12 @@ import { connect } from 'react-redux';
 import uniqueID from 'uniqid';
 import jsonp from 'jsonp';
 import PropTypes from 'prop-types';
-
 import './gallery.scss';
 
 const mapStateToProps = (state) => ({ photos: state.photos });
 
 export class Gallery extends Component {
 	componentDidMount() {
-
 		const TAGS = [
 			'marilyn',
 			'monroe'
