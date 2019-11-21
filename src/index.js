@@ -6,7 +6,9 @@ import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
-const initialState = {};
+const initialState = {
+	photos : []
+};
 
 function reducer(state = initialState, action) {
 	switch (action.type) {
