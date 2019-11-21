@@ -8,7 +8,6 @@ import './gallery.scss';
 const mapStateToProps = (state) => ({ photos: state.photos });
 
 export class Gallery extends Component {
-	static propTypes = {};
 	componentDidMount() {
 		if (this.props.photos.length !== 0) return;
 
@@ -44,5 +43,8 @@ export class Gallery extends Component {
 	}
 }
 
+Gallery.propTypes = {
+	photos : PropTypes.array.isRequired
+};
 
 export default connect(mapStateToProps)(Gallery);
