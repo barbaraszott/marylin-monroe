@@ -12,8 +12,8 @@ const initialState = {
 
 function reducer(state = initialState, action) {
 	switch (action.type) {
-		// case ACTION_TYPE:
-		// return { something }
+		case 'PHOTOS_FETCHED':
+			return { ...state, photos: action.photos };
 		default:
 			return state;
 	}
