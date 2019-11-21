@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import uniqueID from 'uniqid';
 import jsonp from 'jsonp';
@@ -8,7 +8,7 @@ import './gallery.scss';
 
 const mapStateToProps = (state) => ({ photos: state.photos });
 
-export class Gallery extends Component {
+export class Gallery extends PureComponent {
 	componentDidMount() {
 		if (this.props.photos.length !== 0) return;
 
@@ -22,6 +22,8 @@ export class Gallery extends Component {
 		const url = `https://www.flickr.com/services/feeds/photos_public.gne?format=json&tags=${TAGS}`;
 
 		window.jsonFlickrFeed = (response) => {
+			console.log(response.items);
+
 			const photos = response.items.slice(0, PHOTOS_TO_SHOW).map((item) => ({
 				title    : item.title,
 				author   : item.author.match(/\("(.*)"\)/)[1],
@@ -29,6 +31,8 @@ export class Gallery extends Component {
 				imageSrc : item.media.m,
 				link     : item.link
 			}));
+
+			console.log(photos);
 
 			this.props.dispatch({
 				type   : 'PHOTOS_FETCHED',
