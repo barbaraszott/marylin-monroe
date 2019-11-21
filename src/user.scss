@@ -2,8 +2,17 @@
 
 .localization {
 	position: relative;
+	margin-left: 20px;
 	color: $lightGrey;
 
+	&::before {
+		content: "\f3c5";
+		font-family: "Font Awesome 5 Pro";
+		font-weight: 900;
+		position: absolute;
+		top: 0;
+		left: -20px;
+	}
 }
 
 .description {
