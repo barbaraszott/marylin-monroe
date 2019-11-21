@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import uniqueID from 'uniqid';
 import jsonp from 'jsonp';
@@ -8,7 +8,7 @@ import './gallery.scss';
 
 const mapStateToProps = (state) => ({ photos: state.photos });
 
-export class Gallery extends PureComponent {
+export class Gallery extends Component {
 	componentDidMount() {
 
 		const TAGS = [
