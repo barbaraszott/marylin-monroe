@@ -1,9 +1,7 @@
-import PropTypes from 'prop-types';
-
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import './Header.scss';
+import './header.scss';
 
 function Header() {
 	return (
@@ -23,7 +21,5 @@ function Header() {
 		</React.Fragment>
 	);
 }
-
-Header.propTypes = {};
 
 export default Header;
