@@ -10,7 +10,6 @@ function Header() {
 				<div className="user-photo" />
 			</header>
 			<nav className="navbar">
-				{/* TODO: read more about exact */}
 				<NavLink exact to="/" className="navbar__link" activeClassName="navbar__link--selected">
 					<i className="fas fa-user fa-lg" />
 				</NavLink>
