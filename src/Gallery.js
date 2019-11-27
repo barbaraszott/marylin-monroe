@@ -6,9 +6,9 @@ import PropTypes from 'prop-types';
 import getDataFromAPI from './getDataFromAPI';
 import './gallery.scss';
 
-const mapDispatchToProps = (dispatch) => ({
-	getDataFromAPI : () => dispatch(getDataFromAPI())
-});
+const mapDispatchToProps = {
+	getDataFromAPI
+};
 
 const mapStateToProps = (state) => ({ photos: state.photos });
 
