@@ -1,17 +1,12 @@
 import React from 'react';
-import './App.scss';
-
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
 import { connect } from 'react-redux';
+
+import './App.scss';
 
 import Header from './Header';
 import User from './User';
 import Gallery from './Gallery';
-
-const mapStateToProps = (state) => {
-	return {};
-};
 
 function App() {
 	return (
@@ -27,4 +22,4 @@ function App() {
 	);
 }
 
-export default connect(mapStateToProps)(App);
+export default connect()(App);
