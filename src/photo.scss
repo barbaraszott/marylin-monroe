@@ -9,13 +9,6 @@
 	align-items: center;
 	background-color: #f2f2f2;
 	border: 15px solid #f8f8f8;
-
-	&:focus .photo,
-	&:hover .photo {
-		position: relative;
-		z-index: 10;
-		max-height: 150%;
-	}
 }
 
 .photo {
@@ -23,6 +16,15 @@
 	max-height: 100%;
 	object-fit: cover;
 	transition: ease-in 0.4s;
+}
+
+@media (min-width: 968px) {
+	.photo-wrapper:focus .photo,
+	.photo-wrapper:hover .photo {
+		position: relative;
+		z-index: 10;
+		max-height: 150%;
+	}
 }
 
 @media (max-width: 600px) {
