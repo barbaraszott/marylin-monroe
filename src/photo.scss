@@ -1,0 +1,38 @@
+.photo-container {
+	margin: 0;
+}
+
+.photo-wrapper {
+	margin: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	background-color: #f2f2f2;
+	border: 15px solid #f8f8f8;
+
+	&:focus .photo,
+	&:hover .photo {
+		position: relative;
+		z-index: 10;
+		max-height: 150%;
+	}
+
+	.photo {
+		width: 100%;
+		max-height: 100%;
+		object-fit: cover;
+		transition: ease-in 0.4s;
+	}
+}
+
+@media (max-width: 600px) {
+	.photo-container:last-of-type {
+		grid-column-end: span 2;
+	}
+}
+
+@media (max-width: 400px) {
+	.photo-container:last-of-type {
+		grid-column-end: span 1;
+	}
+}
