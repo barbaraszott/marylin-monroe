@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/marylin-monroe/precache-manifest.6989f2b05c07495fc42c2ff346e2b5b7.js"
+  "/marylin-monroe/precache-manifest.adad2ae9058f061de1d508637431e3cc.js"
 );
 
 self.addEventListener('message', (event) => {
