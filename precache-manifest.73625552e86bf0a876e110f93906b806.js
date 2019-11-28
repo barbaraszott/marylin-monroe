@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7746786d8e5436d8e803e67d6a85e1dd",
+    "revision": "13bb038d5331025799c8a56e03882360",
     "url": "/marylin-monroe/index.html"
   },
   {
-    "revision": "ba26525b4f7df7887290",
+    "revision": "842da800327efba0acc0",
     "url": "/marylin-monroe/static/css/main.c82e3929.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marylin-monroe/static/js/2.402793dc.chunk.js"
   },
   {
-    "revision": "ba26525b4f7df7887290",
-    "url": "/marylin-monroe/static/js/main.0cca08a6.chunk.js"
+    "revision": "842da800327efba0acc0",
+    "url": "/marylin-monroe/static/js/main.6201222a.chunk.js"
   },
   {
     "revision": "8a8cdee3ecd628b8deb7",
