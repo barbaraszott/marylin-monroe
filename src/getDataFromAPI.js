@@ -1,5 +1,7 @@
 import jsonp from 'jsonp';
 
+import { PHOTOS_FETCHED } from './constants';
+
 const getDataFromAPI = () => {
 	return function getPhotos(dispatch) {
 		const PHOTOS_TO_SHOW = 9;
@@ -20,7 +22,7 @@ const getDataFromAPI = () => {
 			}));
 
 			dispatch({
-				type   : 'PHOTOS_FETCHED',
+				type   : PHOTOS_FETCHED,
 				photos
 			});
 		};

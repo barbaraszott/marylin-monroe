@@ -6,13 +6,15 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 
+import { PHOTOS_FETCHED } from './constants';
+
 const initialState = {
 	photos : []
 };
 
 function reducer(state = initialState, action) {
 	switch (action.type) {
-		case 'PHOTOS_FETCHED':
+		case PHOTOS_FETCHED:
 			return { ...state, photos: action.photos };
 		default:
 			return state;

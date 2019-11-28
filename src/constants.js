@@ -1,0 +1,1 @@
+export const PHOTOS_FETCHED = 'PHOTOS_FETCHED';
