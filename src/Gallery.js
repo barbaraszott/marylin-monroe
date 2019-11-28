@@ -17,6 +17,7 @@ const mapStateToProps = (state) => ({ photos: state.photos });
 export class Gallery extends Component {
 	componentDidMount() {
 		this.props.getDataFromAPI();
+		document.title = 'Gallery | Marylin Monroe';
 	}
 
 	render() {

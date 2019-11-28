@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import './user.scss';
 
 function User() {
+	useEffect(() => {
+		document.title = 'Info | Marylin Monroe';
+	});
+
 	return (
 		<React.Fragment>
 			<h1 className="name">Marilyn Monroe</h1>
