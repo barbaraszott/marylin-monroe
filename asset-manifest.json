@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/marylin-monroe/static/css/main.c82e3929.chunk.css",
-    "main.js": "/marylin-monroe/static/js/main.4dc45a7f.chunk.js",
-    "main.js.map": "/marylin-monroe/static/js/main.4dc45a7f.chunk.js.map",
+    "main.js": "/marylin-monroe/static/js/main.16346f41.chunk.js",
+    "main.js.map": "/marylin-monroe/static/js/main.16346f41.chunk.js.map",
     "runtime-main.js": "/marylin-monroe/static/js/runtime-main.f718f768.js",
     "runtime-main.js.map": "/marylin-monroe/static/js/runtime-main.f718f768.js.map",
     "static/js/2.9a0ecb4e.chunk.js": "/marylin-monroe/static/js/2.9a0ecb4e.chunk.js",
     "static/js/2.9a0ecb4e.chunk.js.map": "/marylin-monroe/static/js/2.9a0ecb4e.chunk.js.map",
     "index.html": "/marylin-monroe/index.html",
-    "precache-manifest.edf4e7761e5ffecbd5fe44edcceb3756.js": "/marylin-monroe/precache-manifest.edf4e7761e5ffecbd5fe44edcceb3756.js",
+    "precache-manifest.6989f2b05c07495fc42c2ff346e2b5b7.js": "/marylin-monroe/precache-manifest.6989f2b05c07495fc42c2ff346e2b5b7.js",
     "service-worker.js": "/marylin-monroe/service-worker.js",
     "static/css/main.c82e3929.chunk.css.map": "/marylin-monroe/static/css/main.c82e3929.chunk.css.map",
     "static/media/header.scss": "/marylin-monroe/static/media/user-photo.bf9c170a.jpg"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f718f768.js",
     "static/js/2.9a0ecb4e.chunk.js",
     "static/css/main.c82e3929.chunk.css",
-    "static/js/main.4dc45a7f.chunk.js"
+    "static/js/main.16346f41.chunk.js"
   ]
 }
