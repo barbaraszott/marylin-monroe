@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/marylin-monroe/static/css/main.9cc8575c.chunk.css",
+    "main.css": "/marylin-monroe/static/css/main.d86cca5d.chunk.css",
     "main.js": "/marylin-monroe/static/js/main.4dc45a7f.chunk.js",
     "main.js.map": "/marylin-monroe/static/js/main.4dc45a7f.chunk.js.map",
     "runtime-main.js": "/marylin-monroe/static/js/runtime-main.f718f768.js",
@@ -8,15 +8,15 @@
     "static/js/2.9a0ecb4e.chunk.js": "/marylin-monroe/static/js/2.9a0ecb4e.chunk.js",
     "static/js/2.9a0ecb4e.chunk.js.map": "/marylin-monroe/static/js/2.9a0ecb4e.chunk.js.map",
     "index.html": "/marylin-monroe/index.html",
-    "precache-manifest.c55bad1f12cde23d5c484a09651e4db3.js": "/marylin-monroe/precache-manifest.c55bad1f12cde23d5c484a09651e4db3.js",
+    "precache-manifest.d16a74ac52b7ef04564cf5c7bbe71097.js": "/marylin-monroe/precache-manifest.d16a74ac52b7ef04564cf5c7bbe71097.js",
     "service-worker.js": "/marylin-monroe/service-worker.js",
-    "static/css/main.9cc8575c.chunk.css.map": "/marylin-monroe/static/css/main.9cc8575c.chunk.css.map",
+    "static/css/main.d86cca5d.chunk.css.map": "/marylin-monroe/static/css/main.d86cca5d.chunk.css.map",
     "static/media/header.scss": "/marylin-monroe/static/media/user-photo.bf9c170a.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f718f768.js",
     "static/js/2.9a0ecb4e.chunk.js",
-    "static/css/main.9cc8575c.chunk.css",
+    "static/css/main.d86cca5d.chunk.css",
     "static/js/main.4dc45a7f.chunk.js"
   ]
 }
