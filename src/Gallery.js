@@ -3,8 +3,10 @@ import { connect } from 'react-redux';
 import uniqueID from 'uniqid';
 import PropTypes from 'prop-types';
 
-import getDataFromAPI from './getDataFromAPI';
 import './gallery.scss';
+
+import Photo from './Photo';
+import getDataFromAPI from './getDataFromAPI';
 
 const mapDispatchToProps = {
 	getDataFromAPI
@@ -21,17 +23,14 @@ export class Gallery extends Component {
 		return (
 			<section className="gallery">
 				{this.props.photos.map((photo) => {
-					return (
-						<figure key={uniqueID()} className="photo-container">
-							<a href={photo.link} rel="noopener noreferrer" target="_blank" className="photo-wrapper">
-								<img
-									src={photo.imageSrc}
-									alt={`${photo.title} by ${photo.author}. Click to open on Flickr`}
-									className="photo"
-								/>
-							</a>
-						</figure>
-					);
+					const photoProps = {
+						link     : photo.link,
+						imageSrc : photo.imageSrc,
+						title    : photo.title,
+						author   : photo.author
+					};
+
+					return <Photo key={uniqueID()} {...photoProps} />;
 				})}
 			</section>
 		);
@@ -39,7 +38,8 @@ export class Gallery extends Component {
 }
 
 Gallery.propTypes = {
-	photos : PropTypes.array.isRequired
+	photos         : PropTypes.array.isRequired,
+	getDataFromAPI : PropTypes.func.isRequired
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Gallery);
