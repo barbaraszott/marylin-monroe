@@ -21,6 +21,9 @@
 }
 
 @media (max-width: 400px) {
+	.gallery {
+		grid-template-columns: 1fr;
+	}
 	.photo-container:last-of-type {
 		grid-column-end: span 1;
 	}
