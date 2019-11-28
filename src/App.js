@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import './App.scss';
@@ -11,7 +11,7 @@ import Gallery from './Gallery';
 function App() {
 	return (
 		<div className="app">
-			<Router basename="/marylin-monroe">
+			<Router basename="/">
 				<Header />
 				<main className="main">
 					<Route exact path="/" component={User} />
