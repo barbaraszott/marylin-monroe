@@ -11,7 +11,7 @@ import Gallery from './Gallery';
 function App() {
 	return (
 		<div className="app">
-			<Router>
+			<Router basename="/marylin-monroe">
 				<Header />
 				<main className="main">
 					<Route exact path="/" component={User} />
