@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ebb0ed612c98bee0a0136844d0a56217",
+    "revision": "500946113395f60413368be471e3ad31",
     "url": "/marylin-monroe/index.html"
   },
   {
-    "revision": "2163957b6b34aa8b2f53",
-    "url": "/marylin-monroe/static/css/main.f59b79b4.chunk.css"
+    "revision": "de03f51167a5452374ed",
+    "url": "/marylin-monroe/static/css/main.e8ea52b2.chunk.css"
   },
   {
     "revision": "341788c545f49c9b5c67",
     "url": "/marylin-monroe/static/js/2.9a0ecb4e.chunk.js"
   },
   {
-    "revision": "2163957b6b34aa8b2f53",
+    "revision": "de03f51167a5452374ed",
     "url": "/marylin-monroe/static/js/main.4dc45a7f.chunk.js"
   },
   {
